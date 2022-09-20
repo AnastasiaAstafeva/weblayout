@@ -1,0 +1,401 @@
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('../fonts/PlayfairDisplay-Regular.woff2') format('woff2'),
+    url('../fonts/PlayfairDisplay-Regular.woff') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/OpenSans-Regular.woff2') format('woff2'),
+    url('../fonts/OpenSans-Regular.woff') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1, h2, h3, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --color-primary: #FA6464;
+    --color-text: #000;
+    --color-secondary: #fff;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+}
+
+button {
+    outline: none;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Playfair Display';
+    font-weight: normal;
+    font-style: normal;
+}
+
+.container {
+    width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Hello */
+
+.hello {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #FEF6EA;
+}
+
+.hello-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+
+.about-us-wrapper {
+    width: 48%;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 150px;
+}
+
+.nav__list {
+    margin-left: auto;
+    display: flex;
+}
+
+.nav__item:not(:last-child) {
+    margin-right: 40px;
+}
+
+.nav__link {
+    font-family: 'Open Sans';
+    color: var(--color-text);
+    font-size: 14px;
+}
+
+.hello-info {
+    width: 90%;
+    margin-bottom: 130px;
+}
+
+.hello-info__list {
+    display: flex;
+    margin-bottom: 18px;
+}
+
+.hello-info__item {
+    margin-right: 30px;
+    font-family: 'Open Sans';
+    font-size: 14px;
+    color: var(--color-primary);
+}
+
+.hello-info__item:last-child {
+    margin-right: 0;
+}
+
+.hello-info__header {
+    margin-bottom: 37px;
+    padding-left: 50px;
+    font-size: 50px;
+    line-height: 60px;
+}
+
+.hello-info__btn {
+    display: block;
+    margin-left: auto;
+    padding: 23px 28px;
+    font-family: 'Playfair Display';
+    font-size: 18px;
+    letter-spacing: 1.3px;
+    color: var(--color-secondary);
+    border: none;
+    background-color: var(--color-text);
+    box-shadow: 5px 5px 0px 0px #bbb9b7;
+}
+
+.about-us__list {
+    display: flex;
+}
+
+.about-us__item {
+    margin-right: 40px;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+}
+
+.about-us__item:last-child {
+    margin-right: 0;
+}
+
+.about-us__number {
+    margin-right: 8px;
+    font-size: 50px;
+}
+
+.contacts {
+    width: 48%;
+    padding: 53px 53px 600px 52px;
+    position: relative;
+    background-color: #5B6F61;
+}
+
+.contacts__header {
+    margin-bottom: 20px;
+    font-size: 12px;
+    color: var(--color-primary);
+}
+
+.contacts__tel {
+    margin-bottom: 5px;
+    font-size: 20px;
+    color: var(--color-secondary);
+}
+
+.contacts__adr {
+    font-size: 20px;
+    color: var(--color-secondary);
+}
+
+.contacts__img {
+    position: absolute;
+    top: 250px;
+    left: -60px;
+    width: 550px;
+    height: auto;
+    box-shadow: 8px 8px 0px 0px #FEF6EA;
+}
+
+/* Directions */
+
+.directions {
+    padding-top: 110px;
+    padding-bottom: 110px;
+}
+
+.section-header {
+    font-size: 40px;
+    margin-bottom: 73px;
+}
+
+.directions-wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.jobs {
+    width: 23%;
+}
+
+.jobs__header {
+    margin-bottom: 43px;
+    font-size: 23px;
+}
+
+.jobs__text {
+    margin-bottom: 20px;
+    font-family: 'Open Sans';
+    font-size: 15px;
+}
+
+.jobs__btn {
+    padding: 15px 30px;
+    font-family: 'Open Sans';
+    font-size: 15px;
+    border: 1px solid #000;
+    background-color: transparent;
+}
+
+.services-header {
+    margin-bottom: 43px;
+    font-size: 23px;
+}
+
+.services {
+    display: flex;
+}
+
+.service {
+    margin-right: 30px;
+    width: 32%;
+}
+
+.service:last-child {
+    margin-right: 0;
+}
+
+.service__img {
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.service__name {
+    margin-bottom: 15px;
+    font-size: 12px;
+    color: var(--color-primary);
+}
+
+.service__text {
+    margin-bottom: 7px;
+    font-size: 18px;
+}
+
+.service__price {
+    font-family: 'Open Sans';
+    font-size: 15px;
+    color: #5B6F61;
+}
+
+/* Feedback */
+
+.feedback {
+    padding-bottom: 50px;
+}
+
+.feedback-container {
+    display: flex;
+    align-items: center;
+}
+
+.form {
+    margin-right: 77px;
+    width: 45%;
+    padding: 74px 55px 84px 55px;
+    background-color: var(--color-primary);
+}
+
+.form__header {
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 25px;
+    color: var(--color-secondary);
+}
+
+.form__input {
+    width: 100%;
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+    border: none;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    background-color: transparent;
+}
+
+.form__input::placeholder {
+    font-family: 'Open Sans';
+    font-size: 12px;
+    color: rgb(248, 184, 184);
+}
+
+.form__input-end {
+    margin-bottom: 40px;
+}
+
+.form__btn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+    padding: 23px 28px;
+    font-family: 'Playfair Display';
+    letter-spacing: 1.2px;
+    font-size: 18px;
+    background-color: var(--color-text);
+    border: none;
+    color: var(--color-secondary);
+    box-shadow: 4px 4px 0px 0px rgb(255, 131, 131);
+}
+
+.form__text {
+    text-align: center;
+    font-family: 'Open Sans';
+    font-size: 13px;
+    color: var(--color-secondary);
+}
+
+.people-contacts-wrapper {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.phone {
+    margin-right: 40px;
+}
+
+.phone-text {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.email {
+    font-size: 20px;
+}
+
+.people {
+    display: flex;
+}
+
+.humam {
+    margin-right: 10px;
+    width: 76px;
+    height: 76px;
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+/* Footer */
+
+.footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.footer-logo {
+    margin-right: 130px;
+}
+
+.footer-container {
+    display: flex;
+    align-items: center;
+}
+
+.footer-text {
+    margin-right: 50px;
+    font-family: 'Open Sans';
+    font-size: 13px;
+}
+
+.footer-link {
+    margin-left: auto;
+}
